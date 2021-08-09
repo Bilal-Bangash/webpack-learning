@@ -23,4 +23,14 @@ module.exports = {
   output: {
     clean: true,
   },
+
+  //   Notice I’ve added a section to module.exports called devServer.
+  //   In there I’ve specified where I want my pages served from and
+  //   I’m using the open option to open my project in a browser automatically.
+  //   The browser serves the page using the default port of 8080 so
+  //   I can view my page using the URL:http://localhost:8080/.
+  devServer: {
+    contentBase: './dist',
+    open: true,
+  },
 }
